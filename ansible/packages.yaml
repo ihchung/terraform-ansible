@@ -1,0 +1,11 @@
+- name: set up the hosts file
+  hosts: server
+  gather_facts: True
+  tasks:
+    - name: Install packages
+      yum: 
+        name: "{{ packages }}"
+        update_cache: yes
+      vars:
+        packages:
+          - wget
