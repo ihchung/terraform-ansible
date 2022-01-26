@@ -46,7 +46,7 @@ resource ibm_is_subnet "subnet" {
 }
 
 data ibm_is_image "image" {
-  name = "ibm-centos-8-3-minimal-amd64-3"
+  name = "ibm-ubuntu-20-04-3-minimal-amd64-1"
 }
 
 data ibm_is_ssh_key "ssh_key" {
